@@ -190,6 +190,13 @@ display: flex;
     margin-bottom: 10px;
    
 }
+.about-title::before{
+    display: block;
+    content: "";
+    height: 80px;
+    background-image: url(../goit-markup-hw-03/images/antena\ 1.jpg);
+    background-size: contain;
+}
 .about-text {
     font-weight: 400;
     font-size: 14px;
