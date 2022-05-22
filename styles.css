@@ -178,6 +178,15 @@ display: flex;
   justify-content: space-between;
 
 }
+.antena::before{
+    display: block;
+    content: "";
+    height: 80px;
+    background-image: url(./images/antena.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .about-title {
     font-weight: 700;
     font-size: 14px;
@@ -190,13 +199,7 @@ display: flex;
     margin-bottom: 10px;
    
 }
-.about-title::before{
-    display: block;
-    content: "";
-    height: 80px;
-    background-image: url(../goit-markup-hw-03/images/antena\ 1.jpg);
-    background-size: contain;
-}
+
 .about-text {
     font-weight: 400;
     font-size: 14px;
