@@ -209,6 +209,11 @@ display: flex;
 
     margin-bottom: 10px;
 }
+.test{
+    width: 70px;
+    height: 70px;
+    background-position: center;
+}
 .about-text {
     font-weight: 400;
     font-size: 14px;
@@ -216,6 +221,8 @@ display: flex;
     letter-spacing: 0.03em;
     color: #757575;
 
+    margin-right: 30px;
+    margin-bottom: 10px;
 }
 .about-text:not(:last-child){
     margin-right: 30px;
