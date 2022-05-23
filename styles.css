@@ -36,6 +36,7 @@ img {
  padding-right: 15px;
  margin: 0 auto;
 }
+
 /* Header */
 .header{
     border: 1px solid #ECECEC;
@@ -109,6 +110,15 @@ img {
 .studio-header-second:hover, .studio-header-second:focus{
     color: #2196F3;
 }
+.details-header::before {
+    display: block;
+    content: "";
+    height: 16px;
+    background-image: url(./images/envelope.png);
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
 .details-header {
     font-weight: 500;
     font-size: 14px;
@@ -136,8 +146,14 @@ img {
 }
 /* Hero */
 .hero{
-  background-color:#2F303A;
-  text-align: center;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  
+    text-align: center;
     margin-top: 0;
     margin-bottom: 0;
         padding-top: 200px;
@@ -162,7 +178,7 @@ img {
     letter-spacing: 0.03em;
 
     color: #212121;
-    margin-top: 94px;
+    padding-top: 94px;
     margin-bottom: 50px;
 }
 .advantage-list{
@@ -173,20 +189,16 @@ display: flex;
 
    margin-right: 30px; 
 }
-.about-us{
+/* about */
+.about{
+    padding-top: 94px;
+   
+}
+.about-list{
   display: flex;
-  justify-content: space-between;
+}
 
-}
-.antena::before{
-    display: block;
-    content: "";
-    height: 80px;
-    background-image: url(./images/antena.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 .about-title {
     font-weight: 700;
     font-size: 14px;
@@ -195,11 +207,8 @@ display: flex;
     text-transform: uppercase;
     color: #212121;
 
-    margin-top: 94px;
     margin-bottom: 10px;
-   
 }
-
 .about-text {
     font-weight: 400;
     font-size: 14px;
@@ -207,8 +216,6 @@ display: flex;
     letter-spacing: 0.03em;
     color: #757575;
 
-    margin-right: 30px;
-  
 }
 .about-text:not(:last-child){
     margin-right: 30px;
