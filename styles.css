@@ -56,7 +56,9 @@ img {
 .flex-header{
     display: flex;
     margin-left: 70px;
-  
+    justify-content: center;
+    align-items: center;
+
         padding-top: 32px;
         padding-bottom: 32px;
 }
@@ -134,7 +136,11 @@ img {
 .details-header:hover, .details-header:focus{
     color: #2196F3;
 }
-
+.header-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Logo */
 .web {
     color: #2196F3;
@@ -198,12 +204,15 @@ display: flex;
     align-items: center;
     width: 100%;
     height: 120px;
+
     background-color: #F5F4FA;
     border-radius: 4px;
-}
-.about-icon{
-    
 
+    margin-bottom: 30px;
+}
+.about-item{
+    margin-right: 30px;
+    
 }
 .about-list{
   display: flex;
@@ -230,6 +239,7 @@ display: flex;
 
     margin-right: 30px;
     margin-bottom: 10px;
+    
 }
 .about-text:not(:last-child){
     margin-right: 30px;
@@ -400,8 +410,8 @@ list-style: none;
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     
 }
 .teams-item{
@@ -420,7 +430,7 @@ list-style: none;
     letter-spacing: 0.03em;
     color: #757575;
 
-    margin-bottom: 30px;
+    padding-bottom: 16px;
 }
 
 .teams-title{
@@ -438,6 +448,7 @@ list-style: none;
     display: flex;
     justify-content: center;
     
+    padding-bottom: 30px;
 }
 .social-item{
     height: 44px;
@@ -466,6 +477,49 @@ list-style: none;
 .list-item{
     display: flex;
     flex-wrap: wrap;
+}
+/* Clients */
+.clients-title{
+    display: flex;
+    justify-content: center;
+
+    font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: #212121;
+
+   
+}
+.client-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+.client-icon {
+    fill: #AFB1B8;
+}
+.client-item{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    width: 170px;
+    height: 92px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item:not(:last-child){
+    margin-right: 30px;
+}
+.client-list{
+    display: flex;
 }
 /* Footer */
 .footer {
